@@ -3,154 +3,641 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shubham kumar's Webpage</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.8;
-            background-color: whitesmoke;
-            color: black;
-            margin: 0;
-            padding: 20px;
-            display: grid;
-            grid-template-columns: 1fr;
-            max-width: 1200px;
-            margin: auto;
-        }
-        h1 {
-            color: black;
-            margin-bottom: 20px;
-            border-bottom: 2px solid #3498db;
-            padding-bottom: 10px;
-            text-align: center;
-        }
-        h2 {
-            color: #2980b9;
-            font-size: 30px;
-            margin-top: 30px;
-        }
-        p {
-            font-size: 20px;
-            margin-bottom: 20px;
-        }
-        ul {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            padding: 0;
-            list-style-type: none;
-        }
-        ul li {
-            background-color: white;
-            padding: 10px 15px;
-            border-left: 4px solid #3498db;
-            font-size: 18px;
-            flex: 1 1 150px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-        }
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            margin: 20px 0;
-        }
-        th, td {
-            padding: 12px 15px;
-            border: 1px solid rgb(195, 193, 193);
-            text-align: left;
-        }
-        th {
-            background-color: #3498db;
-            color: white;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            padding: 25px;
-            border-radius: 5px;
-            border: 2px solid #3498db;
-            max-width: 500px;
-            margin: 20px auto;
-        }
-        label {
-            font-weight: 600;
-        }
-        input[type="text"],input[type="email"] {
-            padding: 10px;
-            width: 100%;
-            border: 1px solid #ced4da;
-            border-radius: 4px;
-            font-size: 1rem;
-        }
-        input[type="submit"] {
-            background-color: #3498db;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 1rem;
-            width: 150px;
-            align-self: flex-start;
-        }
-        input[type="submit"]:hover {
-            background-color: #2980b9;
-        }
-        .media-section {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-            align-items: center;
-        }
-        img, iframe {
-            width: 100%;
-            border-radius: 5px;
-        }
-    </style>
+    <title>PowerFit Gym | Transform Your Body</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Welcome to Shubham kumar's Webpage</h1>
-    <p>This is a paragraph introducing HTML basics.</p>
-    <h2>HTML List</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>React.Js</li>
-        <li>Mongo DB</li>
-        <li>Spring Boot</li>
-    </ul>
-    <h2>Table</h2>
-    <table>
-        <tr>
-            <th>Sl.No.</th>
-            <th>Duration</th>
-        </tr>
-        <tr>
-            <td>1.</td>
-            <td>Web Development</td>
-        </tr>
-        <tr>
-            <td>2.</td>
-            <td>Full Stack</td>
-        </tr>
-        <tr>
-            <td>3.</td>
-            <td>Java Backend Developer</td>
-        </tr>
-    </table>
-    <h2>Form</h2>
-    <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
-        <input type="submit" value="Submit">
-    </form>
-    <h2>Multimedia</h2>
-    <div class="media-section">
-        <img src="https://cwh-full-next-space.fra1.cdn.digitaloceanspaces.com/tutorial/html-semantic-tags/semantic-tags.png" alt="Semantic tags image">
-        <iframe width="100%" height="315" src="https://www.youtube.com/embed/HBqWsrqK89U" frameborder="0" allowfullscreen></iframe>
-    </div>
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <div class="nav-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">💪</span>
+                        <span class="logo-text">POWER<span class="logo-highlight">FIT</span></span>
+                    </a>
+                </div>
+                
+                <div class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="#home" class="nav-link active">Home</a></li>
+                        <li><a href="#about" class="nav-link">About</a></li>
+                        <li><a href="#classes" class="nav-link">Classes</a></li>
+                        <li><a href="#trainers" class="nav-link">Trainers</a></li>
+                        <li><a href="#membership" class="nav-link">Membership</a></li>
+                        <li><a href="#contact" class="nav-link">Contact</a></li>
+                    </ul>
+                    
+                    <div class="nav-cta">
+                        <a href="#membership" class="btn btn-primary">Join Now</a>
+                        <a href="tel:+11234567890" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i> Call Us
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="mobile-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h4 class="hero-subtitle">BE STRONGER THAN YOUR EXCUSES</h4>
+                <h1 class="hero-title">TRANSFORM YOUR <span class="highlight">BODY</span> & <span class="highlight">MIND</span></h1>
+                <p class="hero-description">Join our community of fitness enthusiasts and achieve your fitness goals with state-of-the-art equipment and expert trainers.</p>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h3>2000+</h3>
+                        <p>Happy Members</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>50+</h3>
+                        <p>Expert Trainers</p>
+                    </div>
+                    <div class="stat-item">
+                        <h3>24/7</h3>
+                        <p>Open Access</p>
+                    </div>
+                </div>
+                
+                <div class="hero-buttons">
+                    <a href="#membership" class="btn btn-primary btn-lg">
+                        <i class="fas fa-dumbbell"></i> Start Free Trial
+                    </a>
+                    <a href="#classes" class="btn btn-outline btn-lg">
+                        <i class="fas fa-play-circle"></i> View Classes
+                    </a>
+                </div>
+            </div>
+            
+            <div class="hero-image">
+                <div class="image-container">
+                    <div class="image-placeholder">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-subtitle">WHY CHOOSE US</h4>
+                <h2 class="section-title">WHY POWER<span class="highlight">FIT</span></h2>
+                <p class="section-description">We provide the perfect environment for your fitness journey</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>Modern Equipment</h3>
+                    <p>Latest strength and cardio machines from top brands</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Expert Trainers</h3>
+                    <p>Certified professionals with years of experience</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>24/7 Access</h3>
+                    <p>Work out whenever it fits your schedule</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <h3>Clean Facilities</h3>
+                    <p>Sanitized equipment and sparkling clean spaces</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Group Classes</h3>
+                    <p>Yoga, Zumba, HIIT, and specialized training</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Results Guaranteed</h3>
+                    <p>Personalized plans for guaranteed results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="classes">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-subtitle">OUR PROGRAMS</h4>
+                <h2 class="section-title">POPULAR <span class="highlight">CLASSES</span></h2>
+                <p class="section-description">Choose from our wide variety of fitness classes</p>
+            </div>
+            
+            <div class="classes-grid">
+                <div class="class-card">
+                    <div class="class-image cardio">
+                        <i class="fas fa-running"></i>
+                    </div>
+                    <div class="class-content">
+                        <h3>Cardio Blast</h3>
+                        <p>High-intensity cardio workout for maximum fat burn</p>
+                        <div class="class-meta">
+                            <span><i class="far fa-clock"></i> 45 mins</span>
+                            <span><i class="fas fa-fire"></i> Advanced</span>
+                        </div>
+                        <a href="#" class="btn btn-sm">Join Class</a>
+                    </div>
+                </div>
+                
+                <div class="class-card">
+                    <div class="class-image strength">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <div class="class-content">
+                        <h3>Strength Training</h3>
+                        <p>Build muscle and increase strength with proper techniques</p>
+                        <div class="class-meta">
+                            <span><i class="far fa-clock"></i> 60 mins</span>
+                            <span><i class="fas fa-fire"></i> All Levels</span>
+                        </div>
+                        <a href="#" class="btn btn-sm">Join Class</a>
+                    </div>
+                </div>
+                
+                <div class="class-card">
+                    <div class="class-image yoga">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <div class="class-content">
+                        <h3>Power Yoga</h3>
+                        <p>Improve flexibility and mindfulness through yoga</p>
+                        <div class="class-meta">
+                            <span><i class="far fa-clock"></i> 60 mins</span>
+                            <span><i class="fas fa-fire"></i> Beginner</span>
+                        </div>
+                        <a href="#" class="btn btn-sm">Join Class</a>
+                    </div>
+                </div>
+                
+                <div class="class-card">
+                    <div class="class-image hiit">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="class-content">
+                        <h3>HIIT Workout</h3>
+                        <p>High-intensity interval training for fast results</p>
+                        <div class="class-meta">
+                            <span><i class="far fa-clock"></i> 30 mins</span>
+                            <span><i class="fas fa-fire"></i> Advanced</span>
+                        </div>
+                        <a href="#" class="btn btn-sm">Join Class</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trainers Section -->
+    <section id="trainers" class="trainers">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-subtitle">MEET OUR TEAM</h4>
+                <h2 class="section-title">EXPERT <span class="highlight">TRAINERS</span></h2>
+                <p class="section-description">Learn from the best in the fitness industry</p>
+            </div>
+            
+            <div class="trainers-grid">
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="trainer-content">
+                        <h3>Alex Johnson</h3>
+                        <p class="trainer-title">Strength & Conditioning Coach</p>
+                        <p>10+ years experience, NASM certified</p>
+                        <div class="trainer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="trainer-content">
+                        <h3>Sarah Miller</h3>
+                        <p class="trainer-title">Yoga & Wellness Expert</p>
+                        <p>RYT 500 certified, 8 years experience</p>
+                        <div class="trainer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="trainer-card">
+                    <div class="trainer-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user"></i>
+                        </div>
+                    </div>
+                    <div class="trainer-content">
+                        <h3>Mike Chen</h3>
+                        <p class="trainer-title">Cardio & HIIT Specialist</p>
+                        <p>CrossFit Level 2, 12 years experience</p>
+                        <div class="trainer-social">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Membership Section -->
+    <section id="membership" class="membership">
+        <div class="container">
+            <div class="section-header">
+                <h4 class="section-subtitle">CHOOSE YOUR PLAN</h4>
+                <h2 class="section-title">MEMBERSHIP <span class="highlight">PLANS</span></h2>
+                <p class="section-description">Find the perfect plan for your fitness journey</p>
+            </div>
+            
+            <div class="plans-grid">
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>BASIC</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">29</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Perfect for beginners</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> Gym Access</li>
+                            <li><i class="fas fa-check"></i> Basic Equipment</li>
+                            <li><i class="fas fa-times"></i> Group Classes</li>
+                            <li><i class="fas fa-times"></i> Personal Training</li>
+                            <li><i class="fas fa-times"></i> Locker Room</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline">Choose Plan</a>
+                </div>
+                
+                <div class="plan-card featured">
+                    <div class="plan-badge">MOST POPULAR</div>
+                    <div class="plan-header">
+                        <h3>PRO</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">59</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>Best value for enthusiasts</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 24/7 Gym Access</li>
+                            <li><i class="fas fa-check"></i> All Equipment</li>
+                            <li><i class="fas fa-check"></i> Group Classes</li>
+                            <li><i class="fas fa-check"></i> 2 PT Sessions</li>
+                            <li><i class="fas fa-check"></i> Locker Room</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-primary">Choose Plan</a>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="plan-header">
+                        <h3>ELITE</h3>
+                        <div class="plan-price">
+                            <span class="currency">$</span>
+                            <span class="amount">99</span>
+                            <span class="period">/month</span>
+                        </div>
+                        <p>For serious athletes</p>
+                    </div>
+                    <div class="plan-features">
+                        <ul>
+                            <li><i class="fas fa-check"></i> 24/7 Premium Access</li>
+                            <li><i class="fas fa-check"></i> All Equipment + New</li>
+                            <li><i class="fas fa-check"></i> Unlimited Classes</li>
+                            <li><i class="fas fa-check"></i> 8 PT Sessions</li>
+                            <li><i class="fas fa-check"></i> Spa & Sauna</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn btn-outline">Choose Plan</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <h4 class="section-subtitle">GET IN TOUCH</h4>
+                        <h2 class="section-title">CONTACT <span class="highlight">US</span></h2>
+                    </div>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Our Location</h4>
+                                <p>123 Fitness Street, Gym City</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Phone Number</h4>
+                                <p>+1 (234) 567-8900</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email Address</h4>
+                                <p>info@powerfitgym.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Opening Hours</h4>
+                                <p>24/7 - All Days</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <h3>Send us a Message</h3>
+                        
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number">
+                        </div>
+                        
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Interested In</option>
+                                <option>Membership</option>
+                                <option>Personal Training</option>
+                                <option>Group Classes</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="4" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">💪</span>
+                        <span class="logo-text">POWER<span class="logo-highlight">FIT</span></span>
+                    </a>
+                    <p>Transform your body, transform your life.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#classes">Classes</a></li>
+                        <li><a href="#trainers">Trainers</a></li>
+                        <li><a href="#membership">Membership</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-hours">
+                    <h4>Opening Hours</h4>
+                    <ul>
+                        <li><span>Monday - Friday:</span> <span>5:00 AM - 11:00 PM</span></li>
+                        <li><span>Saturday:</span> <span>6:00 AM - 10:00 PM</span></li>
+                        <li><span>Sunday:</span> <span>7:00 AM - 9:00 PM</span></li>
+                        <li><span>24/7 Access:</span> <span>For Pro & Elite Members</span></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for fitness tips and offers</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Enter your email" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 PowerFit Gym. All rights reserved. | Made with <i class="fas fa-heart"></i> for fitness enthusiasts</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Cookie Policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        // Close menu when clicking on links
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenuBtn.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Back to Top Button
+        const backToTopBtn = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopBtn.classList.add('show');
+            } else {
+                backToTopBtn.classList.remove('show');
+            }
+        });
+        
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        
+        // Form Submission (demo)
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! We will contact you shortly.');
+            this.reset();
+        });
+        
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert(`Thank you for subscribing with ${email}!`);
+            this.reset();
+        });
+        
+        // Plan Selection
+        document.querySelectorAll('.plan-card .btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const plan = this.closest('.plan-card').querySelector('h3').textContent;
+                alert(`You selected the ${plan} plan! We will contact you for next steps.`);
+            });
+        });
+        
+        // Class Join Buttons
+        document.querySelectorAll('.class-card .btn').forEach(btn => {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const className = this.closest('.class-card').querySelector('h3').textContent;
+                alert(`You've joined ${className}! See you at the class.`);
+            });
+        });
+        
+        // Active Navigation Link on Scroll
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                
+                if (pageYOffset >= (sectionTop - 150)) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
