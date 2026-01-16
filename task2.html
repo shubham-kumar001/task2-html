@@ -3,641 +3,547 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PowerFit Gym | Transform Your Body</title>
+    <title>ULTRA FIT | Premium Fitness Experience</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
 </head>
 <body>
-    <!-- Header & Navigation -->
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader">
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+            <div class="loading-bar"></div>
+        </div>
+        <p>Loading ULTRA FIT...</p>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <nav class="navbar">
-                <div class="nav-brand">
-                    <a href="#" class="logo">
-                        <span class="logo-icon">💪</span>
-                        <span class="logo-text">POWER<span class="logo-highlight">FIT</span></span>
-                    </a>
-                </div>
+                <a href="#" class="logo">
+                    <span class="logo-text">ULTRA</span>
+                    <span class="logo-highlight">FIT</span>
+                </a>
                 
-                <div class="nav-menu">
-                    <ul class="nav-links">
-                        <li><a href="#home" class="nav-link active">Home</a></li>
-                        <li><a href="#about" class="nav-link">About</a></li>
-                        <li><a href="#classes" class="nav-link">Classes</a></li>
-                        <li><a href="#trainers" class="nav-link">Trainers</a></li>
-                        <li><a href="#membership" class="nav-link">Membership</a></li>
-                        <li><a href="#contact" class="nav-link">Contact</a></li>
-                    </ul>
-                    
-                    <div class="nav-cta">
-                        <a href="#membership" class="btn btn-primary">Join Now</a>
-                        <a href="tel:+11234567890" class="btn btn-secondary">
-                            <i class="fas fa-phone"></i> Call Us
-                        </a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                    <li class="nav-item"><a href="#classes" class="nav-link">Classes</a></li>
+                    <li class="nav-item"><a href="#trainers" class="nav-link">Trainers</a></li>
+                    <li class="nav-item"><a href="#pricing" class="nav-link">Pricing</a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+                    <li class="nav-item"><a href="#" class="btn btn-primary btn-small">Join Now</a></li>
+                </ul>
+                
+                <div class="nav-cta">
+                    <a href="#" class="btn btn-primary">Free Trial</a>
+                    <div class="hamburger" id="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
                     </div>
-                </div>
-                
-                <div class="mobile-menu-btn">
-                    <span></span>
-                    <span></span>
-                    <span></span>
                 </div>
             </nav>
         </div>
     </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero" id="home">
+        <div class="hero-bg-video">
+            <video autoplay muted loop playsinline>
+                <source src="https://assets.mixkit.co/videos/preview/mixkit-young-woman-exercising-on-an-exercise-bike-40754-large.mp4" type="video/mp4">
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
         <div class="container">
             <div class="hero-content">
-                <h4 class="hero-subtitle">BE STRONGER THAN YOUR EXCUSES</h4>
-                <h1 class="hero-title">TRANSFORM YOUR <span class="highlight">BODY</span> & <span class="highlight">MIND</span></h1>
-                <p class="hero-description">Join our community of fitness enthusiasts and achieve your fitness goals with state-of-the-art equipment and expert trainers.</p>
+                <h1 class="hero-title">
+                    <span class="text-gradient">Transform</span> Your Body,
+                    <span class="text-gradient">Elevate</span> Your Life
+                </h1>
+                <p class="hero-subtitle">Experience world-class fitness training with cutting-edge technology and elite trainers at ULTRA FIT</p>
                 
                 <div class="hero-stats">
-                    <div class="stat-item">
-                        <h3>2000+</h3>
-                        <p>Happy Members</p>
+                    <div class="stat">
+                        <h3 class="stat-number" data-count="1500">0</h3>
+                        <p class="stat-label">Active Members</p>
                     </div>
-                    <div class="stat-item">
-                        <h3>50+</h3>
-                        <p>Expert Trainers</p>
+                    <div class="stat">
+                        <h3 class="stat-number" data-count="25">0</h3>
+                        <p class="stat-label">Expert Trainers</p>
                     </div>
-                    <div class="stat-item">
-                        <h3>24/7</h3>
-                        <p>Open Access</p>
+                    <div class="stat">
+                        <h3 class="stat-number" data-count="50">0</h3>
+                        <p class="stat-label">Weekly Classes</p>
+                    </div>
+                    <div class="stat">
+                        <h3 class="stat-number" data-count="100">0</h3>
+                        <p class="stat-label">Success Stories</p>
                     </div>
                 </div>
                 
                 <div class="hero-buttons">
-                    <a href="#membership" class="btn btn-primary btn-lg">
-                        <i class="fas fa-dumbbell"></i> Start Free Trial
+                    <a href="#pricing" class="btn btn-primary btn-large">
+                        <span>Start Your Journey</span>
+                        <i class="fas fa-arrow-right"></i>
                     </a>
-                    <a href="#classes" class="btn btn-outline btn-lg">
-                        <i class="fas fa-play-circle"></i> View Classes
+                    <a href="#classes" class="btn btn-secondary btn-large">
+                        <i class="fas fa-play-circle"></i>
+                        <span>View Classes</span>
                     </a>
                 </div>
             </div>
-            
-            <div class="hero-image">
-                <div class="image-container">
-                    <div class="image-placeholder">
-                        <i class="fas fa-dumbbell"></i>
-                    </div>
-                </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="mouse">
+                <div class="wheel"></div>
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
+    <!-- Features Section -->
+    <section class="features">
         <div class="container">
             <div class="section-header">
-                <h4 class="section-subtitle">WHY CHOOSE US</h4>
-                <h2 class="section-title">WHY POWER<span class="highlight">FIT</span></h2>
-                <p class="section-description">We provide the perfect environment for your fitness journey</p>
+                <h2 class="section-title">Why Choose <span class="text-gradient">ULTRA FIT</span></h2>
+                <p class="section-subtitle">We combine cutting-edge technology with expert training for unparalleled results</p>
             </div>
             
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-dumbbell"></i>
+                        <i class="fas fa-brain"></i>
                     </div>
-                    <h3>Modern Equipment</h3>
-                    <p>Latest strength and cardio machines from top brands</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Expert Trainers</h3>
-                    <p>Certified professionals with years of experience</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-clock"></i>
-                    </div>
-                    <h3>24/7 Access</h3>
-                    <p>Work out whenever it fits your schedule</p>
-                </div>
-                
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-tint"></i>
-                    </div>
-                    <h3>Clean Facilities</h3>
-                    <p>Sanitized equipment and sparkling clean spaces</p>
+                    <h3>AI-Powered Training</h3>
+                    <p>Custom workout plans generated by artificial intelligence based on your goals and progress.</p>
+                    <div class="feature-tag">NEW</div>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-heartbeat"></i>
                     </div>
-                    <h3>Group Classes</h3>
-                    <p>Yoga, Zumba, HIIT, and specialized training</p>
+                    <h3>Health Monitoring</h3>
+                    <p>Real-time biometric tracking with smart equipment and wearable integration.</p>
                 </div>
                 
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-trophy"></i>
+                        <i class="fas fa-vr-cardboard"></i>
                     </div>
-                    <h3>Results Guaranteed</h3>
-                    <p>Personalized plans for guaranteed results</p>
+                    <h3>VR Fitness Classes</h3>
+                    <p>Immersive virtual reality workouts that make exercise an adventure.</p>
+                    <div class="feature-tag">TRENDING</div>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Genetic Fitness</h3>
+                    <p>DNA-based nutrition and training plans optimized for your genetic profile.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3>Smart Equipment</h3>
+                    <p>Internet-connected machines that adjust automatically to your fitness level.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
+                    <h3>Elite Community</h3>
+                    <p>Connect with like-minded fitness enthusiasts in our exclusive member network.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Classes Section -->
-    <section id="classes" class="classes">
+    <section class="classes" id="classes">
         <div class="container">
             <div class="section-header">
-                <h4 class="section-subtitle">OUR PROGRAMS</h4>
-                <h2 class="section-title">POPULAR <span class="highlight">CLASSES</span></h2>
-                <p class="section-description">Choose from our wide variety of fitness classes</p>
+                <h2 class="section-title">Premium <span class="text-gradient">Classes</span></h2>
+                <p class="section-subtitle">Experience the future of group fitness with our innovative class formats</p>
+            </div>
+            
+            <div class="classes-filter">
+                <button class="filter-btn active" data-filter="all">All Classes</button>
+                <button class="filter-btn" data-filter="strength">Strength</button>
+                <button class="filter-btn" data-filter="cardio">Cardio</button>
+                <button class="filter-btn" data-filter="mind">Mind & Body</button>
+                <button class="filter-btn" data-filter="tech">Tech</button>
             </div>
             
             <div class="classes-grid">
-                <div class="class-card">
-                    <div class="class-image cardio">
-                        <i class="fas fa-running"></i>
+                <div class="class-card" data-category="tech">
+                    <div class="class-image">
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Cyborg Strength">
+                        <div class="class-overlay">
+                            <a href="#" class="class-play">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="class-badge">AI Powered</div>
                     </div>
                     <div class="class-content">
-                        <h3>Cardio Blast</h3>
-                        <p>High-intensity cardio workout for maximum fat burn</p>
                         <div class="class-meta">
-                            <span><i class="far fa-clock"></i> 45 mins</span>
-                            <span><i class="fas fa-fire"></i> Advanced</span>
+                            <span class="class-category">Tech</span>
+                            <span class="class-duration"><i class="far fa-clock"></i> 60 min</span>
+                            <span class="class-intensity"><i class="fas fa-fire"></i> High</span>
                         </div>
-                        <a href="#" class="btn btn-sm">Join Class</a>
+                        <h3 class="class-title">Cyborg Strength</h3>
+                        <p class="class-description">AI-guided weight training with real-time form correction and adaptive resistance.</p>
+                        <div class="class-footer">
+                            <div class="class-trainer">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="Trainer">
+                                <span>Alex Morgan</span>
+                            </div>
+                            <a href="#" class="class-book">Book Now</a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="class-card">
-                    <div class="class-image strength">
-                        <i class="fas fa-dumbbell"></i>
+                <div class="class-card" data-category="cardio">
+                    <div class="class-image">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Neon Cycle">
+                        <div class="class-overlay">
+                            <a href="#" class="class-play">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="class-badge">VR Experience</div>
                     </div>
                     <div class="class-content">
-                        <h3>Strength Training</h3>
-                        <p>Build muscle and increase strength with proper techniques</p>
                         <div class="class-meta">
-                            <span><i class="far fa-clock"></i> 60 mins</span>
-                            <span><i class="fas fa-fire"></i> All Levels</span>
+                            <span class="class-category">Cardio</span>
+                            <span class="class-duration"><i class="far fa-clock"></i> 45 min</span>
+                            <span class="class-intensity"><i class="fas fa-fire"></i> Extreme</span>
                         </div>
-                        <a href="#" class="btn btn-sm">Join Class</a>
+                        <h3 class="class-title">Neon Cycle</h3>
+                        <p class="class-description">Virtual reality cycling through stunning digital landscapes with synchronized music.</p>
+                        <div class="class-footer">
+                            <div class="class-trainer">
+                                <img src="https://images.unsplash.com/photo-1594381898411-846e7d193883?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="Trainer">
+                                <span>Sarah Chen</span>
+                            </div>
+                            <a href="#" class="class-book">Book Now</a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="class-card">
-                    <div class="class-image yoga">
-                        <i class="fas fa-spa"></i>
+                <div class="class-card" data-category="mind">
+                    <div class="class-image">
+                        <img src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Neuro Yoga">
+                        <div class="class-overlay">
+                            <a href="#" class="class-play">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="class-badge">Biofeedback</div>
                     </div>
                     <div class="class-content">
-                        <h3>Power Yoga</h3>
-                        <p>Improve flexibility and mindfulness through yoga</p>
                         <div class="class-meta">
-                            <span><i class="far fa-clock"></i> 60 mins</span>
-                            <span><i class="fas fa-fire"></i> Beginner</span>
+                            <span class="class-category">Mind & Body</span>
+                            <span class="class-duration"><i class="far fa-clock"></i> 75 min</span>
+                            <span class="class-intensity"><i class="fas fa-fire"></i> Low</span>
                         </div>
-                        <a href="#" class="btn btn-sm">Join Class</a>
+                        <h3 class="class-title">Neuro Yoga</h3>
+                        <p class="class-description">Mindfulness meditation combined with yoga, enhanced by real-time brainwave monitoring.</p>
+                        <div class="class-footer">
+                            <div class="class-trainer">
+                                <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="Trainer">
+                                <span>David Park</span>
+                            </div>
+                            <a href="#" class="class-book">Book Now</a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="class-card">
-                    <div class="class-image hiit">
-                        <i class="fas fa-bolt"></i>
+                <div class="class-card" data-category="strength">
+                    <div class="class-image">
+                        <img src="https://images.unsplash.com/photo-1534367507877-0edd93bd013b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Titan Training">
+                        <div class="class-overlay">
+                            <a href="#" class="class-play">
+                                <i class="fas fa-play"></i>
+                            </a>
+                        </div>
+                        <div class="class-badge">Smart Weights</div>
                     </div>
                     <div class="class-content">
-                        <h3>HIIT Workout</h3>
-                        <p>High-intensity interval training for fast results</p>
                         <div class="class-meta">
-                            <span><i class="far fa-clock"></i> 30 mins</span>
-                            <span><i class="fas fa-fire"></i> Advanced</span>
+                            <span class="class-category">Strength</span>
+                            <span class="class-duration"><i class="far fa-clock"></i> 90 min</span>
+                            <span class="class-intensity"><i class="fas fa-fire"></i> High</span>
                         </div>
-                        <a href="#" class="btn btn-sm">Join Class</a>
+                        <h3 class="class-title">Titan Training</h3>
+                        <p class="class-description">Advanced strength training with electromyostimulation technology for maximum gains.</p>
+                        <div class="class-footer">
+                            <div class="class-trainer">
+                                <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=50&q=80" alt="Trainer">
+                                <span>Marcus Lee</span>
+                            </div>
+                            <a href="#" class="class-book">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Trainers Section -->
-    <section id="trainers" class="trainers">
+    <!-- Pricing Section -->
+    <section class="pricing" id="pricing">
         <div class="container">
             <div class="section-header">
-                <h4 class="section-subtitle">MEET OUR TEAM</h4>
-                <h2 class="section-title">EXPERT <span class="highlight">TRAINERS</span></h2>
-                <p class="section-description">Learn from the best in the fitness industry</p>
+                <h2 class="section-title">Choose Your <span class="text-gradient">Plan</span></h2>
+                <p class="section-subtitle">Flexible membership options tailored to your fitness journey</p>
             </div>
             
-            <div class="trainers-grid">
-                <div class="trainer-card">
-                    <div class="trainer-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                    <div class="trainer-content">
-                        <h3>Alex Johnson</h3>
-                        <p class="trainer-title">Strength & Conditioning Coach</p>
-                        <p>10+ years experience, NASM certified</p>
-                        <div class="trainer-social">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
+            <div class="pricing-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-btn active" data-tab="monthly">Monthly</button>
+                    <button class="tab-btn" data-tab="quarterly">Quarterly</button>
+                    <button class="tab-btn" data-tab="annual">Annual</button>
                 </div>
                 
-                <div class="trainer-card">
-                    <div class="trainer-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-user"></i>
+                <div class="tab-content active" id="monthly">
+                    <div class="pricing-cards">
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3 class="pricing-title">Basic</h3>
+                                <div class="pricing-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">49</span>
+                                    <span class="period">/month</span>
+                                </div>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check"></i> Gym Access</li>
+                                <li><i class="fas fa-check"></i> Basic Equipment</li>
+                                <li><i class="fas fa-check"></i> Locker Room</li>
+                                <li><i class="fas fa-times"></i> Group Classes</li>
+                                <li><i class="fas fa-times"></i> Personal Training</li>
+                                <li><i class="fas fa-times"></i> Advanced Tech</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline">Get Started</a>
                         </div>
-                    </div>
-                    <div class="trainer-content">
-                        <h3>Sarah Miller</h3>
-                        <p class="trainer-title">Yoga & Wellness Expert</p>
-                        <p>RYT 500 certified, 8 years experience</p>
-                        <div class="trainer-social">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        
+                        <div class="pricing-card featured">
+                            <div class="pricing-badge">MOST POPULAR</div>
+                            <div class="pricing-header">
+                                <h3 class="pricing-title">Pro</h3>
+                                <div class="pricing-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">99</span>
+                                    <span class="period">/month</span>
+                                </div>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check"></i> Everything in Basic</li>
+                                <li><i class="fas fa-check"></i> Unlimited Classes</li>
+                                <li><i class="fas fa-check"></i> 4 PT Sessions</li>
+                                <li><i class="fas fa-check"></i> Health Assessment</li>
+                                <li><i class="fas fa-times"></i> VR Equipment</li>
+                                <li><i class="fas fa-times"></i> AI Training</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary">Get Started</a>
+                        </div>
+                        
+                        <div class="pricing-card">
+                            <div class="pricing-header">
+                                <h3 class="pricing-title">Ultimate</h3>
+                                <div class="pricing-price">
+                                    <span class="currency">$</span>
+                                    <span class="amount">199</span>
+                                    <span class="period">/month</span>
+                                </div>
+                            </div>
+                            <ul class="pricing-features">
+                                <li><i class="fas fa-check"></i> Everything in Pro</li>
+                                <li><i class="fas fa-check"></i> Unlimited PT</li>
+                                <li><i class="fas fa-check"></i> All Tech Features</li>
+                                <li><i class="fas fa-check"></i> DNA Analysis</li>
+                                <li><i class="fas fa-check"></i> VIP Lounge</li>
+                                <li><i class="fas fa-check"></i> Guest Privileges</li>
+                            </ul>
+                            <a href="#" class="btn btn-outline">Get Started</a>
                         </div>
                     </div>
                 </div>
-                
-                <div class="trainer-card">
-                    <div class="trainer-image">
-                        <div class="image-placeholder">
-                            <i class="fas fa-user"></i>
-                        </div>
-                    </div>
-                    <div class="trainer-content">
-                        <h3>Mike Chen</h3>
-                        <p class="trainer-title">Cardio & HIIT Specialist</p>
-                        <p>CrossFit Level 2, 12 years experience</p>
-                        <div class="trainer-social">
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-facebook"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            
+            <div class="pricing-cta">
+                <p>Not sure which plan is right for you? <a href="#contact">Book a free consultation</a> with our fitness experts.</p>
             </div>
         </div>
     </section>
 
-    <!-- Membership Section -->
-    <section id="membership" class="membership">
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <div class="section-header">
-                <h4 class="section-subtitle">CHOOSE YOUR PLAN</h4>
-                <h2 class="section-title">MEMBERSHIP <span class="highlight">PLANS</span></h2>
-                <p class="section-description">Find the perfect plan for your fitness journey</p>
+                <h2 class="section-title">Success <span class="text-gradient">Stories</span></h2>
+                <p class="section-subtitle">Hear from our members who transformed their lives at ULTRA FIT</p>
             </div>
             
-            <div class="plans-grid">
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <h3>BASIC</h3>
-                        <div class="plan-price">
-                            <span class="currency">$</span>
-                            <span class="amount">29</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <p>Perfect for beginners</p>
-                    </div>
-                    <div class="plan-features">
-                        <ul>
-                            <li><i class="fas fa-check"></i> Gym Access</li>
-                            <li><i class="fas fa-check"></i> Basic Equipment</li>
-                            <li><i class="fas fa-times"></i> Group Classes</li>
-                            <li><i class="fas fa-times"></i> Personal Training</li>
-                            <li><i class="fas fa-times"></i> Locker Room</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="btn btn-outline">Choose Plan</a>
-                </div>
-                
-                <div class="plan-card featured">
-                    <div class="plan-badge">MOST POPULAR</div>
-                    <div class="plan-header">
-                        <h3>PRO</h3>
-                        <div class="plan-price">
-                            <span class="currency">$</span>
-                            <span class="amount">59</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <p>Best value for enthusiasts</p>
-                    </div>
-                    <div class="plan-features">
-                        <ul>
-                            <li><i class="fas fa-check"></i> 24/7 Gym Access</li>
-                            <li><i class="fas fa-check"></i> All Equipment</li>
-                            <li><i class="fas fa-check"></i> Group Classes</li>
-                            <li><i class="fas fa-check"></i> 2 PT Sessions</li>
-                            <li><i class="fas fa-check"></i> Locker Room</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="btn btn-primary">Choose Plan</a>
-                </div>
-                
-                <div class="plan-card">
-                    <div class="plan-header">
-                        <h3>ELITE</h3>
-                        <div class="plan-price">
-                            <span class="currency">$</span>
-                            <span class="amount">99</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <p>For serious athletes</p>
-                    </div>
-                    <div class="plan-features">
-                        <ul>
-                            <li><i class="fas fa-check"></i> 24/7 Premium Access</li>
-                            <li><i class="fas fa-check"></i> All Equipment + New</li>
-                            <li><i class="fas fa-check"></i> Unlimited Classes</li>
-                            <li><i class="fas fa-check"></i> 8 PT Sessions</li>
-                            <li><i class="fas fa-check"></i> Spa & Sauna</li>
-                        </ul>
-                    </div>
-                    <a href="#" class="btn btn-outline">Choose Plan</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <div class="contact-grid">
-                <div class="contact-info">
-                    <div class="section-header">
-                        <h4 class="section-subtitle">GET IN TOUCH</h4>
-                        <h2 class="section-title">CONTACT <span class="highlight">US</span></h2>
-                    </div>
-                    
-                    <div class="info-items">
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-map-marker-alt"></i>
+            <div class="testimonials-slider">
+                <div class="swiper-wrapper">
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
                             </div>
-                            <div class="info-content">
-                                <h4>Our Location</h4>
-                                <p>123 Fitness Street, Gym City</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-phone"></i>
-                            </div>
-                            <div class="info-content">
-                                <h4>Phone Number</h4>
-                                <p>+1 (234) 567-8900</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-envelope"></i>
-                            </div>
-                            <div class="info-content">
-                                <h4>Email Address</h4>
-                                <p>info@powerfitgym.com</p>
-                            </div>
-                        </div>
-                        
-                        <div class="info-item">
-                            <div class="info-icon">
-                                <i class="fas fa-clock"></i>
-                            </div>
-                            <div class="info-content">
-                                <h4>Opening Hours</h4>
-                                <p>24/7 - All Days</p>
+                            <p class="testimonial-text">"The AI training program completely changed my approach to fitness. I lost 30lbs in 3 months!"</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Michael Chen">
+                                <div>
+                                    <h4>Michael Chen</h4>
+                                    <span>Software Engineer</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"The VR cycling classes make cardio fun! I actually look forward to my workouts now."</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Sarah Johnson">
+                                <div>
+                                    <h4>Sarah Johnson</h4>
+                                    <span>Marketing Director</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card swiper-slide">
+                        <div class="testimonial-content">
+                            <div class="testimonial-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="testimonial-text">"Genetic fitness testing showed me exactly what my body needs. Best investment in my health ever!"</p>
+                            <div class="testimonial-author">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="David Park">
+                                <div>
+                                    <h4>David Park</h4>
+                                    <span>Entrepreneur</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="contact-form-container">
-                    <form class="contact-form">
-                        <h3>Send us a Message</h3>
-                        
-                        <div class="form-group">
-                            <input type="text" placeholder="Your Name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="email" placeholder="Your Email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <input type="tel" placeholder="Phone Number">
-                        </div>
-                        
-                        <div class="form-group">
-                            <select required>
-                                <option value="">Interested In</option>
-                                <option>Membership</option>
-                                <option>Personal Training</option>
-                                <option>Group Classes</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        
-                        <div class="form-group">
-                            <textarea placeholder="Your Message" rows="4" required></textarea>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary">
-                            <i class="fas fa-paper-plane"></i> Send Message
-                        </button>
-                    </form>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your <span class="text-gradient">Transformation</span>?</h2>
+                <p>Book your free trial session today and experience the future of fitness</p>
+                <div class="cta-form">
+                    <input type="email" placeholder="Enter your email">
+                    <button class="btn btn-primary">Get Free Trial</button>
                 </div>
+                <p class="cta-note">No credit card required. Trial includes full access to all facilities.</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <span class="logo-icon">💪</span>
-                        <span class="logo-text">POWER<span class="logo-highlight">FIT</span></span>
+                <div class="footer-column">
+                    <a href="#" class="footer-logo">
+                        <span class="logo-text">ULTRA</span>
+                        <span class="logo-highlight">FIT</span>
                     </a>
-                    <p>Transform your body, transform your life.</p>
+                    <p class="footer-description">The future of fitness is here. Experience training enhanced by cutting-edge technology and elite expertise.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
+                <div class="footer-column">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
                         <li><a href="#classes">Classes</a></li>
                         <li><a href="#trainers">Trainers</a></li>
-                        <li><a href="#membership">Membership</a></li>
+                        <li><a href="#pricing">Membership</a></li>
                     </ul>
                 </div>
                 
-                <div class="footer-hours">
-                    <h4>Opening Hours</h4>
-                    <ul>
-                        <li><span>Monday - Friday:</span> <span>5:00 AM - 11:00 PM</span></li>
-                        <li><span>Saturday:</span> <span>6:00 AM - 10:00 PM</span></li>
-                        <li><span>Sunday:</span> <span>7:00 AM - 9:00 PM</span></li>
-                        <li><span>24/7 Access:</span> <span>For Pro & Elite Members</span></li>
+                <div class="footer-column">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 Tech Fitness Ave, Silicon Valley, CA</li>
+                        <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+                        <li><i class="fas fa-envelope"></i> info@ultrafit.com</li>
+                        <li><i class="fas fa-clock"></i> Open 24/7 for members</li>
                     </ul>
                 </div>
                 
-                <div class="footer-newsletter">
-                    <h4>Newsletter</h4>
-                    <p>Subscribe for fitness tips and offers</p>
+                <div class="footer-column">
+                    <h3 class="footer-title">Newsletter</h3>
+                    <p>Subscribe to get updates on new classes and tech features</p>
                     <form class="newsletter-form">
-                        <input type="email" placeholder="Enter your email" required>
+                        <input type="email" placeholder="Your Email">
                         <button type="submit"><i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 PowerFit Gym. All rights reserved. | Made with <i class="fas fa-heart"></i> for fitness enthusiasts</p>
-                <div class="footer-bottom-links">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Policy</a>
-                </div>
+                <p>&copy; 2023 ULTRA FIT. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+                <p>Designed with <i class="fas fa-heart"></i> for fitness innovation</p>
             </div>
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button id="backToTop" class="back-to-top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- JavaScript -->
-    <script>
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navMenu = document.querySelector('.nav-menu');
-        
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenuBtn.classList.toggle('active');
-            navMenu.classList.toggle('active');
-        });
-        
-        // Close menu when clicking on links
-        document.querySelectorAll('.nav-link').forEach(link => {
-            link.addEventListener('click', () => {
-                mobileMenuBtn.classList.remove('active');
-                navMenu.classList.remove('active');
-            });
-        });
-        
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 100,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Back to Top Button
-        const backToTopBtn = document.getElementById('backToTop');
-        
-        window.addEventListener('scroll', () => {
-            if (window.pageYOffset > 300) {
-                backToTopBtn.classList.add('show');
-            } else {
-                backToTopBtn.classList.remove('show');
-            }
-        });
-        
-        backToTopBtn.addEventListener('click', () => {
-            window.scrollTo({
-                top: 0,
-                behavior: 'smooth'
-            });
-        });
-        
-        // Form Submission (demo)
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your message! We will contact you shortly.');
-            this.reset();
-        });
-        
-        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const email = this.querySelector('input[type="email"]').value;
-            alert(`Thank you for subscribing with ${email}!`);
-            this.reset();
-        });
-        
-        // Plan Selection
-        document.querySelectorAll('.plan-card .btn').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const plan = this.closest('.plan-card').querySelector('h3').textContent;
-                alert(`You selected the ${plan} plan! We will contact you for next steps.`);
-            });
-        });
-        
-        // Class Join Buttons
-        document.querySelectorAll('.class-card .btn').forEach(btn => {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                const className = this.closest('.class-card').querySelector('h3').textContent;
-                alert(`You've joined ${className}! See you at the class.`);
-            });
-        });
-        
-        // Active Navigation Link on Scroll
-        window.addEventListener('scroll', () => {
-            const sections = document.querySelectorAll('section');
-            const navLinks = document.querySelectorAll('.nav-link');
-            
-            let current = '';
-            
-            sections.forEach(section => {
-                const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
-                
-                if (pageYOffset >= (sectionTop - 150)) {
-                    current = section.getAttribute('id');
-                }
-            });
-            
-            navLinks.forEach(link => {
-                link.classList.remove('active');
-                if (link.getAttribute('href') === `#${current}`) {
-                    link.classList.add('active');
-                }
-            });
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
